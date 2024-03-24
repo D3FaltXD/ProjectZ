@@ -2,6 +2,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    place-content: center;
+    min-height: 100vh;
+    background: #050b18;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
 .parallax {
     background-image: url("background.jpg");
     background-attachment: fixed;
@@ -39,7 +50,12 @@
     margin: 0 55px;
     font-family: 'Gemsbuck 01', sans-serif;
     font-size: 20px;
+    
 }
+.nav-links li:hover {
+    color: #cfcdd3;
+}
+
 .nav-links,
 .social-links {
     display: flex;
@@ -69,13 +85,8 @@ a {
     }
 }
 
-body {
-  
-    place-content: center;
-    min-height: 100vh;
-    background: #050b18;
-}
 
+/* Article Carousel Starts here */
 .article {
     position: relative;
     display: grid;
@@ -152,4 +163,314 @@ body {
     transform: translateY(0);
     opacity: 1;
     transition-delay: 400ms;
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+/* Signup Starts Here */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+
+input,
+select {
+    width: 80%;
+    padding: 15px;
+    background-color: #fff;
+    color: #050b18;
+    border-radius: 15px;
+}
+
+.button-container {
+    
+.button-container {
+    display: flex;
+        /* Flexbox for horizontal alignment */
+        
+        /* Center buttons vertically */
+        justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.signup-button {
+    background-color: #FBBA2A;
+    color: #050b18;
+}
+
+.signup-button:hover {
+    background-color: #F0A31A;
+}
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.signup-button {
+    background-color: #FBBA2A;
+    color: #050b18;
+}
+
+.signup-button:hover {
+    background-color: #F0A31A;
+}
+
+#success-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+/* footer goes here */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Responsive layout */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    flex: 0 0 auto;
+    /* Allow logo to shrink */
+}
+
+.footer-nav,
+.sociall-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav li,
+.sociall-links li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-nav a {
+    padding: 5px 10px;
+}
+
+.footer-nav {
+    flex-direction: row;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.footer-nav a:hover {
+    color: #ccc;
+    /* Change color on hover */
+}
+
+.sociall-links {
+    justify-content: flex-end;
+    /* Align to right */
+}
+
+/* Responsive adjustments (media queries) */
+@media screen and (max-width: 768px) {
+    .footer-nav {
+        display: none;
+        /* Hide navigation on small screens */
+    }
+
+    .social-links {
+        justify-content: center;
+        /* Center social links on small screens */
+    }
+}
+
+.footer-divider {
+    border: 1px solid #333;
+    /* Thin line */
+    margin-top: 20px;
+    /* Space between content and line */
+}
+
+
+
+/* Text and video Container */
+
+
+.container {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 80vw;
+    box-sizing: border-box;
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-carousel {
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 30px; /* Add 30px space between text carousel and text div */
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding-right: 50px;
+    /* Smooth transition */
+}
+
+.slide {
+    flex: 0 0 100%;
+    /* Make each slide occupy full width */
+    padding: 20px;
+    text-align: center;
+    list-style: none; /* Remove bullet points */
+}
+
+.slide h3 {
+    margin-bottom: 10px;
+}
+
+
+.prev-button,
+.next-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: #F0A31A;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Center buttons vertically */
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+.text {
+    text-align: justify;
+}
+
+.Para {
+    font-family: 'Gemsbuck 01', sans-serif;
+    font-size: 50px;
+    color: #cfcdd3;
+    /* Make the text justified aligned */
+    margin-top: 80px;
+}
+
+/* Media query for small screens (optional) */
+@media screen and (max-width: 768px) {
+    /* Adjust layout for smaller screens if needed */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+    /* Founder Section */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container>div {
+    text-align: center;
+    margin-right: 40px;
+}
+
+.image-container>div:last-child {
+    margin-right: 0;
+}
+
+.image {
+    background-image: url('background.jpg');
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+
+.image-text {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container>div {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
