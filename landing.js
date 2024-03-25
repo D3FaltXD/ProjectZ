@@ -19,6 +19,11 @@ form.addEventListener('submit', (event) => {
   form.reset(); // Reset the form after successful submission
 });
 
+// Prevent form scrolling to the top of the page on submit
+form.addEventListener('click', (event) => {
+  event.preventDefault();
+});
+
 
 // Text Carousel
 
@@ -33,7 +38,8 @@ function moveSlide(slideIndex) {
   currentSlide = slideIndex;
 }
 
-prevButton.addEventListener('click', () => {
+prevButton.addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent default button click behavior
   const totalSlides = carousel.children.length;
   if (currentSlide === 0) {
     moveSlide(totalSlides - 1); // Move to last slide on previous click
@@ -42,11 +48,26 @@ prevButton.addEventListener('click', () => {
   }
 });
 
-nextButton.addEventListener('click', () => {
+nextButton.addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent default button click behavior
   const totalSlides = carousel.children.length;
   if (currentSlide === totalSlides - 1) {
     moveSlide(0); // Move to first slide on next click
   } else {
     moveSlide(currentSlide + 1);
   }
+});
+
+
+//Parallax starts here
+
+window.addEventListener('scroll', function() {
+ const parallaxLayers = document.querySelectorAll('.layer');
+const scrollTop = window.scrollY;
+
+parallaxLayers.forEach((layer, index) => {
+  const speed = index === 0 ? -0.1 : index === 0 ? 0.1 : 0.1; // Adjust speed as needed
+  const transformY = scrollTop * speed;
+  layer.style.transform = `translateY(${transformY}px)`;
+});
 });
