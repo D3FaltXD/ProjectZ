@@ -19,15 +19,10 @@ form.addEventListener('submit', (event) => {
   form.reset(); // Reset the form after successful submission
 });
 
-// Prevent form scrolling to the top of the page on submit
-form.addEventListener('click', (event) => {
-  event.preventDefault();
-});
-
 
 // Text Carousel
-
 const carousel = document.querySelector('.carousel-slides');
+const slides = carousel.querySelectorAll('.slide');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 
@@ -38,23 +33,20 @@ function moveSlide(slideIndex) {
   currentSlide = slideIndex;
 }
 
-prevButton.addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default button click behavior
-  const totalSlides = carousel.children.length;
-  if (currentSlide === 0) {
-    moveSlide(totalSlides - 1); // Move to last slide on previous click
-  } else {
-    moveSlide(currentSlide - 1);
-  }
-});
-
-nextButton.addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default button click behavior
-  const totalSlides = carousel.children.length;
+nextButton.addEventListener('click', () => {
+  const totalSlides = slides.length;
   if (currentSlide === totalSlides - 1) {
     moveSlide(0); // Move to first slide on next click
   } else {
     moveSlide(currentSlide + 1);
+  }
+});
+
+prevButton.addEventListener('click', () => {
+  if (currentSlide === 0) {
+    moveSlide(totalSlides - 1); // Move to last slide on prev click
+  } else {
+    moveSlide(currentSlide - 1);
   }
 });
 
@@ -66,7 +58,7 @@ window.addEventListener('scroll', function() {
 const scrollTop = window.scrollY;
 
 parallaxLayers.forEach((layer, index) => {
-  const speed = index === 0 ? -0.1 : index === 0 ? 0.1 : 0.1; // Adjust speed as needed
+  const speed = index === 0 ? -0.1 : index === 0 ? 0.1 : 0.; // Adjust speed as needed
   const transformY = scrollTop * speed;
   layer.style.transform = `translateY(${transformY}px)`;
 });
