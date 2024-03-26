@@ -215,19 +215,23 @@ a {
     /* Add padding for better spacing on smaller screens */
 }
 /* Article Carousel Starts here */
-.article {
-    position: relative;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+
+.container {
+    position: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
-    width: 800px;
+    width: 100vw;
     height: 500px;
     transition: all 400ms;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
-.article:hover .box {
+.container:hover .box {
     filter: grayscale(100%) opacity(24%);
 }
 
@@ -241,27 +245,27 @@ a {
     align-items: center;
 }
 
-.article .box:hover {
+.container .box:hover {
     filter: grayscale(0%) opacity(100%);
 }
 
-.article:has(.box-1:hover) {
+.container:has(.box-1:hover) {
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
 }
 
-.article:has(.box-2:hover) {
+.container:has(.box-2:hover) {
     grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
 }
 
-.article:has(.box-3:hover) {
+.container:has(.box-3:hover) {
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
 }
 
-.article:has(.box-4:hover) {
+.container:has(.box-4:hover) {
     grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
 }
 
-.article:has(.box-5:hover) {
+.container:has(.box-5:hover) {
     grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
 }
 
@@ -293,14 +297,24 @@ a {
     transition-delay: 400ms;
 }
 
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px;
+    /* Adjust margin as needed */
 }
 
-
+.call-to-action {
+    text-decoration: none;
+    color: #fff;
+    /* Button text color */
+    background-color: #000;
+    /* Button background color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    /* Indicate clickable behavior */
+}
 
 /* Signup Starts Here */
 /* General Styles */
