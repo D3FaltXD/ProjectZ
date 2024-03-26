@@ -786,3 +786,17 @@ a {
     border-radius: 5px;
     font-size: 12px;
 }
+
+.signup-button{
+    background-color: #FBBA2A;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: medium;
+}
+.parallax-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
