@@ -215,7 +215,7 @@ a {
     position: relative;
     ;
     width: 100%;
-    background-image: url('images/home.png');
+    background-image: url('images/home.webp');
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -784,15 +784,16 @@ a {
     background-color: #F0A31A;
     padding: 10px 10px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .signup-button{
     background-color: #FBBA2A;
-    padding: 20px 30px;
+    padding: 15px 30px;
     border-radius: 5px;
     font-size: 18px;
-    font-weight: medium;
+    font-weight: regular;
+    color: #151519;
 }
 .parallax-btn {
     display: flex;
@@ -800,3 +801,74 @@ a {
     align-items: center;
     height: 100%;
 }
+
+/* Founder Section Styling */
+/* Founder Section Styling */
+
+.founders-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.founders-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.founder-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.founder-card {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.founder-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.founder-name {
+  font-weight: bold;
+  margin: 10;
+  font-size: 20px; /* Changed font size to 20px */
+}
+
+.founder-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.founder-social a img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.founder-social-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Responsiveness (Adjust media query sizes as needed) */
+
+@media only screen and (max-width: 768px) {
+    .founder-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder-card {
+        width: 100%;
+    }
+}
+
