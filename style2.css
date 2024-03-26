@@ -770,3 +770,21 @@ a {
     margin-top: 20px;
     /* Space between content and line */
 }
+
+
+.button-container {
+    display: flex;
+    /* Arrange buttons horizontally */
+    justify-content: center;
+    /* Center buttons within the container */
+    margin-top: 25px;
+    /* Add 25px space above the buttons */
+}
+
+.read-more {
+    /* Existing button styles... */
+    background-color: #F0A31A;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
