@@ -541,7 +541,7 @@ a {
 .image-container p {
     font-weight: 600;
     margin-top: 2px;
-    font-size: 30px;
+    font-size: 70px;
 }
 
 /* Media query for narrow screens */
@@ -598,18 +598,16 @@ a {
 }
 
 .aka {
+    font-size: 100px;
     font-style: italic;
-    color: #999;
-    /* Example color */
+    color: #999; /* Example color */
 }
 
 /* Styles for real names */
 .real-name {
     font-weight: bold;
-    color: #FBBA2A;
-    /* Example color */
+    color: #FBBA2A; /* Example color */
 }
-
 
 
 /* Form */
@@ -787,11 +785,4 @@ a {
     padding: 10px 10px;
     border-radius: 5px;
     font-size: 12px;
-}
-h2 {
-    color:#FBBA2A;
-    padding-top: 100px;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 20px;
 }
