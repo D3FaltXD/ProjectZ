@@ -92,12 +92,7 @@ body {
     width:50vh;
     /* Make the text justified aligned */
 }
-.head2{
-    font-family: 'Gemsbuck 01', sans-serif;
-    font-size: 60px;
-    color: #F0A31A;
-    text-align: left;
-}
+
 .register-button{
     background-color: #F0A31A;
     color: #050b18;
@@ -172,24 +167,52 @@ a {
 
 /* Responsive design (media queries) */
 @media screen and (max-width: 768px) {
+.text2 {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+        /* Remove width property as it's not needed for responsiveness */
+    }
 
-    .nav-links,
-    .social-links {
-        display: none;
+    .head2 {
+        font-size: 36px;
+        /* Adjust heading size for smaller screens */
     }
 }
 
-.text{
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* Adjust margin as needed */
+}
+
+.call-to-action {
+    text-decoration: none;
+    color: #fff;
+    /* Button text color */
+    background-color: #000;
+    /* Button background color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    /* Indicate clickable behavior */
+}
+.head2 {
+    font-family: 'Gemsbuck 01', sans-serif;
+    font-size: 60px;
+    color: #F0A31A;
+    text-align: left;
+}
+.text2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 16px;
     color: #fff;
-    width: 50vh;
-    /* Make the text justified aligned */
     margin: 0 auto;
+    /* Center the element horizontally */
     text-align: justify;
-    margin-top: 20vh;
-    
+    padding: 20px;
+    /* Add padding for better spacing on smaller screens */
 }
 /* Article Carousel Starts here */
 .article {

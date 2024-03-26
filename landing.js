@@ -36,3 +36,5 @@ parallaxLayers.forEach((layer, index) => {
   layer.style.transform = `translateY(${transformY}px)`;
 });
 });
+
+
