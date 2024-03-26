@@ -541,7 +541,7 @@ a {
 .image-container p {
     font-weight: 600;
     margin-top: 2px;
-    font-size: 30px;
+    font-size: 70px;
 }
 
 /* Media query for narrow screens */
@@ -598,18 +598,16 @@ a {
 }
 
 .aka {
+    font-size: 100px;
     font-style: italic;
-    color: #999;
-    /* Example color */
+    color: #999; /* Example color */
 }
 
 /* Styles for real names */
 .real-name {
     font-weight: bold;
-    color: #FBBA2A;
-    /* Example color */
+    color: #FBBA2A; /* Example color */
 }
-
 
 
 /* Form */
