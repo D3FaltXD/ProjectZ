@@ -788,3 +788,10 @@ a {
     border-radius: 5px;
     font-size: 12px;
 }
+h2 {
+    color:#FBBA2A;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
