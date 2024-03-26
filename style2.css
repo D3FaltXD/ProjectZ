@@ -635,7 +635,7 @@ h1.signup-title {
 }
 
 p.signup-description {
-    color: #333;
+    color: rgba(255, 255, 255, 0.288);
     font-size: 16px;
 }
 
